@@ -1,0 +1,305 @@
+@import "variables";
+
+/*.timeline-content_left .slideLeft-trigger {
+  .content-animation(50);
+}
+.content-animation(@counter) when (@counter > 0) {
+ .content-animation((@counter - 1));    // next iteration
+ &:nth-child(@{counter}) {
+      animation-delay: (0.25s * @counter);
+    }
+}
+*/
+
+.left-additional .slideLeft, .right-additional .slideRight {
+  .additional-animation(50);
+}
+.additional-animation(@counter) when (@counter > 0) {
+ .additional-animation((@counter - 1));    // next iteration
+ &:nth-child(@{counter}) {
+      animation-delay: (0.1s * @counter);
+    }
+}
+
+.dot.Grow-trigger {
+  animation-delay: .2s;
+}
+/*
+==============================================
+SlideDown
+==============================================
+*/
+
+.slideDown {
+  animation-name: slideDown;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+  visibility: visible !important;
+}
+@keyframes slideDown {
+  0% {
+    top: -10px;
+    opacity: 0.0;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+/*
+==============================================
+SlideUp
+==============================================
+*/
+
+.slideUp {
+  animation-name: slideUp;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  opacity: 0;
+  visibility: visible !important;
+}
+@keyframes slideUp {
+  0% {
+    transform: translate(0, 100px);
+    opacity: 0.0;
+  }
+  100% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+
+/*
+==============================================
+bumpUp
+==============================================
+*/
+
+.bumpUp {
+  animation-name: bumpUp;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-delay: .2s;
+  visibility: visible !important;
+  opacity: 0;
+}
+@keyframes bumpUp {
+  0% {
+    transform: translate(0, 0px);
+    opacity: 0;
+  }
+  50% {
+    transform: translate(0, -25px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+
+/*
+==============================================
+slideLeft
+==============================================
+*/
+
+.slideLeft {
+  animation-name: slideLeft;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;;
+  animation-delay: .25s;
+  opacity: 0;
+  visibility: visible !important;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(68px);
+    opacity: 0.0;
+  }
+  100% {
+    transform: translateX(6px);
+    opacity: 1;
+  }
+}
+
+/*
+==============================================
+slideRight
+==============================================
+*/
+
+.slideRight {
+  animation-name: slideRight;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;;
+  animation-delay: .25s;
+  opacity: 0;
+  visibility: visible !important;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-68px);
+    opacity: 0.0;
+  }
+  100% {
+    transform: translateX(6px);
+    opacity: 1;
+  }
+}
+
+/*
+==============================================
+Grow
+==============================================
+*/
+
+.Grow {
+    animation-name: Grow;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+    opacity: 0;
+    visibility: visible !important;
+}
+
+@keyframes Grow {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/*
+==============================================
+fadeIn
+==============================================
+*/
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+
+    opacity: 0;
+    visibility: visible !important;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*
+==============================================
+fadeDown
+==============================================
+*/
+
+.fadeDown {
+    animation-name: fadeDown;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+    opacity: 0;
+    visibility: visible !important;
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0.0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/*
+==============================================
+Pulse
+==============================================
+*/
+
+.Pulse {
+    animation-name: Pulse;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+    opacity: 1;
+    visibility: visible !important;
+}
+
+@keyframes Pulse {
+    0% {
+        color: #444;
+    }
+    50% {
+        color: #71cdf4;
+    }
+    100% {
+        color: #444;
+    }
+}
+
+/*
+==============================================
+Bubble
+==============================================
+*/
+
+.Bubble {
+    animation-name: Bubble;
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+
+    opacity: 1;
+    visibility: visible !important;
+}
+
+@keyframes Bubble {
+  0% {
+    border-radius: 50%;
+    left: -50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+  }
+  70% {
+    width: 150vw;
+    height: 150vw;
+    border-radius: 50%;
+    left: -25vw;
+    top: -25vw;
+  }
+  100% {
+    width: 150vw;
+    height: 150vw;
+    border-radius: 50%;
+    left: -25vw;
+    top: -25vw;
+  }
+}

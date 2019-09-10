@@ -1,0 +1,53 @@
+Sticky add
+
+<div class="ad ad--h is-stuck" id="ad-phantom">
+    <img src="img/horizontal-ad.jpg" class="ad__img ad__img--728"/>
+  </div>
+
+  <div class="row">
+              <div id="sticky-anchor"></div>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 horizontal-ad" id="sticky">
+                <img src="img/horizontal-ad.jpg" />
+              </div>
+            </div>
+
+
+  <script src="js/sticky-ad-parallax.js"></script>
+  <script src="js/skrollr.js"></script>
+
+  ,
+      scrollElem: document.getElementById('parallax')
+
+      ,
+      scroll_target: $('#parallax')
+
+
+      var s = skrollr.init({
+      smoothScrolling: true,
+      scrollTarget: document.getElementById('parallax')
+    });
+
+     class="parallax__body"
+
+     background--dark
+
+  <div class="parallax" id="parallax">
+    <!--  Hero -->
+    <div class="parallax__group parallax__group--70">
+      <div class="parallax__layer parallax__layer--3 slideDown-trigger">
+
+      </div>
+      <div class="parallax__layer parallax__layer--0">
+
+      </div>
+      <div class="parallax__layer parallax__layer--copy" data-0="opacity: 1" data-400="opacity: 0">
+
+      </div>
+    </div>
+    <!--  Body -->
+    <div class="parallax__group">
+      <div class="parallax__layer parallax__layer--0">
+
+      </div>
+    </div>
+  </div>

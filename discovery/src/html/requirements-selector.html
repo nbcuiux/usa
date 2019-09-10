@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>USA Discovery</title>
+  <link href="app.css" rel="stylesheet">
+  <link href="lib/animsition.css" rel="stylesheet">
+  <link rel="shortcut icon" href="http://www.usanetwork.com/sites/usanetwork/themes/aurora_usa/images/favicon.ico" />
+  <style>
+    .animsition-overlay-slide {
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="animsition-overlay" data-animsition-overlay="true">
+    <section>
+      <div class="nav-wrapper">
+        <a href="http://usa.nbcuxlab.com/" class="nav-item">Lifecycle</a>
+        <a href="http://usa.nbcuxlab.com/requirements/" class="nav-item">Requirements</a>
+        <a href="http://usa.nbcuxlab.com/discovery/" class="nav-item active">Discovery</a>
+      </div>
+      <div class="header">
+        <img src="img/usa-logo-reversed.svg" style="height:67px; vertical-align:text-top"/> Discovery
+      </div>
+    </section>
+    <section>
+      <div class="carousel-container fadeIn" style="animation-delay: .5s;">
+        <div class="owl-carousel">
+          <a class="item link" href="">
+            <img src="img/a-spot-cover.jpg" />
+            <div class="item-copy">
+              <div class="item-title">A-Spot</div>
+              <div class="item-description">some description goes here</div>
+            </div>
+          </a>
+          <a class="item link" href="">
+            <img src="img/a-spot-cover.jpg" />
+            <div class="item-copy">
+              <div class="item-title">A-Spot</div>
+              <div class="item-description">some description goes here</div>
+            </div>
+          </a>
+          <a class="item link" href="">
+            <img src="img/a-spot-cover.jpg" />
+            <div class="item-copy">
+              <div class="item-title">A-Spot</div>
+              <div class="item-description">some description goes here</div>
+            </div>
+          </a>
+          <a class="item link" href="">
+            <img src="img/a-spot-cover.jpg" />
+            <div class="item-copy">
+              <div class="item-title">A-Spot</div>
+              <div class="item-description">some description goes here</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script>
+      if ( $(window).width() > 992) {
+        $(function () {
+            $('div.Grow-trigger').addClass("hide-ani").viewportChecker({
+                classToAdd: 'visible Grow', // Class to add to the elements when they are visible
+                offset: 25
+            });
+            $('div.slideLeft-trigger').addClass("hide-ani").viewportChecker({
+                classToAdd: 'visible slideLeft', // Class to add to the elements when they are visible
+                offset: 25
+            });
+            $('div.slideRight-trigger').addClass("hide-ani").viewportChecker({
+                classToAdd: 'visible slideRight', // Class to add to the elements when they are visible
+                offset: 25
+            });
+            $('div.slideUp-trigger').addClass("hide-ani").viewportChecker({
+                classToAdd: 'visible slideUp', // Class to add to the elements when they are visible
+                offset: 100
+            });
+            $('div.bumpUp-trigger').addClass("hide-ani").viewportChecker({
+                classToAdd: 'visible bumpUp', // Class to add to the elements when they are visible
+                offset: 25
+            });
+            $('div.fadeIn-trigger , section.fadeIn-trigger').addClass("hide-ani").viewportChecker({
+                classToAdd: 'visible fadeIn', // Class to add to the elements when they are visible
+                offset: -20
+            });
+        });
+      }
+      else {
+
+      }
+
+    </script>
+    <script src="lib/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="lib/animsition.min.js"></script>
+    <script src="lib/owl.carousel.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".animsition-overlay").animsition({
+          inClass: 'overlay-bubble-in',
+          outClass: 'overlay-slide-out-bottom',
+          inDuration: 800,
+          outDuration: 400,
+          linkElement: '.animsition-link',
+          // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+          loading: true,
+          loadingParentElement: 'body', //animsition wrapper element
+          loadingClass: 'animsition-loading',
+          loadingInner: '', // e.g '<img src="loading.svg" />'
+          timeout: false,
+          timeoutCountdown: 5000,
+          onLoadEvent: true,
+          browser: [ 'animation-duration', '-webkit-animation-duration'],
+          // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+          // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+          overlay : true,
+          overlayClass : 'animsition-overlay-slide',
+          overlayParentElement : 'body',
+          transition: function(url){ window.location.href = url; }
+        });
+      });
+
+      $('.owl-carousel').owlCarousel({
+        stagePadding: 200,
+        loop:true,
+        margin:500,
+        items:1,
+        lazyLoad: true,
+        nav:true,
+        responsive:{
+              0:{
+                  items:1,
+                  stagePadding: 60
+              },
+              500:{
+                  items:1,
+                  stagePadding: 40
+              },
+              600:{
+                  items:1,
+                  stagePadding: 60
+              },
+              700:{
+                  items:1,
+                  stagePadding: 110
+              },
+              800:{
+                  items:1,
+                  stagePadding: 160
+              },
+              900:{
+                  items:1,
+                  stagePadding: 210
+              },
+              1000:{
+                  items:1,
+                  stagePadding: 260
+              },
+              1100:{
+                  items:1,
+                  stagePadding: 290
+              },
+              1200:{
+                  items:1,
+                  stagePadding: 350
+              },
+              1300:{
+                  items:1,
+                  stagePadding: 360
+              },
+              1400:{
+                  items:1,
+                  stagePadding: 460
+              },
+              1500:{
+                  items:1,
+                  stagePadding: 460
+              },
+              1600:{
+                  items:1,
+                  stagePadding: 510
+              },
+              1700:{
+                  items:1,
+                  stagePadding: 560
+              },
+              1800:{
+                  items:1,
+                  stagePadding: 610
+              },
+              1900:{
+                  items:1,
+                  stagePadding: 660
+              },
+              2000:{
+                  items:1,
+                  stagePadding: 710
+              },
+              2100:{
+                  items:1,
+                  stagePadding: 760
+              },
+              2200:{
+                  items:1,
+                  stagePadding: 810
+              },
+              2300:{
+                  items:1,
+                  stagePadding: 860
+              },
+              2400:{
+                  items:1,
+                  stagePadding: 910
+              }
+          }
+      })
+    </script>
+  </body>
+</html>

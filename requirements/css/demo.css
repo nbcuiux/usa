@@ -1,0 +1,57 @@
+@import url('reset.css');
+
+/* General Demo Style */
+body{
+	background:#f5f5f5;
+	color:#444444;
+	font-family: 'OpenSans-Light', sans-serif;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+	overflow-x: hidden;
+}
+p{
+    font-size:  12px;
+    letter-spacing: 0.5px;
+    line-height:  28px;
+    padding: 0px 4px 15px 4px;
+}
+a{
+	color:#000;
+	text-decoration:none;
+}
+.clr{
+	clear:both;
+}
+h1{
+	padding:20px;
+	padding-top: 40px;
+	font-size:50px;
+	color:#71cdf4;
+	font-family: 'OpenSans-Regular', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+  text-align:center;
+}
+
+h1 .logo {
+	height:67px;
+	vertical-align:text-top;
+}
+h2 {
+	font-family: 'OpenSans-SemiBold', sans-serif;
+	text-transform: uppercase;
+	font-size:14px;
+	color:#71cdf4;
+	letter-spacing: 1px;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+
+h3 {
+	font-family:'OpenSans-Regular', sans-serif;
+	font-size:100%;
+	margin-top:4px;
+	margin-bottom:6px;
+	text-transform: uppercase;
+}

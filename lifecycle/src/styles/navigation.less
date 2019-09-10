@@ -1,0 +1,236 @@
+@bp-nav: 1600px;
+@import "variables";
+
+// --------- Navigation --------- //
+
+.nav__container {
+  top: 4px;
+  right: 20px;
+  z-index: 15;
+  display: block;
+  width: 30px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+
+  @media screen and (min-width: @bp-nav) {
+    width: auto;
+    height: auto;
+    top: 20px;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+    padding: 15px 0 0;
+  }
+
+  &:hover {
+    a {
+      opacity: 0.6;
+    }
+  }
+
+  i {
+    display: none;
+    font-size: 20px;
+
+    @media screen and (min-width: @bp-nav) {
+      display: block;
+    }
+  }
+
+  span {
+    display: block;
+
+    @media screen and (min-width: @bp-nav) {
+      display: none;
+    }
+  }
+
+  a {
+    color: #444;
+    transition: opacity .2s ease-in-out;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &.active {
+      background: transparent;
+
+      @media screen and (min-width: @bp-nav) {
+        background: @background;
+      }
+
+      a {
+        color: #444;
+        font-family: 'OpenSans-SemiBold';
+
+        @media screen and (min-width: @bp-nav) {
+          color: #444;
+        }
+      }
+    }
+
+    @media screen and (min-width: @bp-nav) {
+      display: inline-block;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border: 1px solid @background;
+      font-size: 12px;
+      margin-left: -1px;
+      transition: background .3s;
+
+      &:last-child {
+        padding: 5px 10px;
+        border: 1px solid @background;
+      }
+
+      &:first-child {
+        margin-left: 0;
+        padding: 3px 7px 4px;
+        position: relative;
+        top: 2px;
+      }
+
+      a {
+        font-family: 'OpenSans-SemiBold';
+        color: #f5f5f5;
+        transition: color .3s;
+
+        &:hover {
+          opacity: 1;
+          color: #444;
+        }
+      }
+
+      &:hover {
+        background: @background;
+
+        a {
+          opacity: 1;
+          color: #444;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: @bp-nav) {
+    top: 0px;
+  }
+}
+
+.nav__content {
+  padding: 70px 40px;
+
+  @media screen and (min-width: @bp-nav) {
+    padding: 0;
+  }
+}
+
+.nav__trigger {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 5%;
+  background-color: #FFFFFF;
+  font-size: 0px;
+  transition: background-color 0.3s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 13;
+
+  @media screen and (min-width: @bp-nav) {
+    display: none;
+  }
+
+  &:before, &:after {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    content: '';
+    transition: transform 0.3s, background-color 0.3s;
+  }
+
+  &:before {
+    transform: translateY(-300%);
+  }
+
+  &:after {
+    transform: translateY(300%);
+  }
+
+  .active & {
+    background: transparent;
+
+    &:before {
+      transform: translateY(0) rotate(45deg);
+      background: #444;
+    }
+
+    &:after {
+      transform: translateY(0) rotate(-45deg);
+      background: #444;
+    }
+  }
+}
+
+.nav__content__wrapper {
+  background: @white;
+  height: 100vh;
+  width: 300px;
+  top: -4px;
+  position: fixed;
+  transition: transform .3s ease-in-out;
+  transform: translateX(300px);
+  z-index: 12;
+
+  @media screen and (min-width: @bp-nav) {
+    transform: translateX(-457px);
+    width: 460px;
+    height: auto;
+    top: 14px;
+    background: transparent;
+  }
+
+  .active & {
+    transform: translateX(-245px);
+  }
+}
+
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 12;
+  opacity: 0;
+  transition: opacity .1s ease-in-out;
+  pointer-events: none;
+
+  .active & {
+    opacity: 0.8;
+    pointer-events: auto;
+  }
+}

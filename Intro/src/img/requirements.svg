@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#37474F;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#37474F;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#E60F18;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#E60F18;stroke:#37474F;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st4{fill:#B0BEC5;stroke:#37474F;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:#37474F;stroke:#37474F;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M103.5,111.5c0,7.2-5.5,13-12.7,13h-53c-7.2,0-13.3-5.8-13.3-13V30.7c0-7.2,6-13.2,13.3-13.2h53
+		c7.2,0,12.7,6,12.7,13.2V111.5z"/>
+	<g>
+		<g>
+			<line class="st1" x1="59" y1="69.5" x2="90" y2="69.5"/>
+		</g>
+		<g>
+			<line class="st2" x1="59" y1="54.5" x2="90" y2="54.5"/>
+		</g>
+		<g>
+			<line class="st1" x1="59" y1="81.5" x2="90" y2="81.5"/>
+		</g>
+		<g>
+			<line class="st1" x1="59" y1="94.5" x2="90" y2="94.5"/>
+		</g>
+		<g>
+			<line class="st1" x1="59" y1="107.5" x2="90" y2="107.5"/>
+		</g>
+	</g>
+	<polyline class="st3" points="33.4,52.2 40.2,59 55.9,43.2 	"/>
+	<g>
+		<line class="st1" x1="37" y1="64.6" x2="44.9" y2="72.6"/>
+		<line class="st1" x1="37" y1="72.6" x2="44.9" y2="64.6"/>
+	</g>
+	<g>
+		<line class="st1" x1="37" y1="76.8" x2="44.9" y2="84.8"/>
+		<line class="st1" x1="37" y1="84.8" x2="44.9" y2="76.8"/>
+	</g>
+	<g>
+		<line class="st1" x1="37" y1="89.1" x2="44.9" y2="97"/>
+		<line class="st1" x1="37" y1="97" x2="44.9" y2="89.1"/>
+	</g>
+	<g>
+		<line class="st1" x1="37" y1="101.3" x2="44.9" y2="109.3"/>
+		<line class="st1" x1="37" y1="109.3" x2="44.9" y2="101.3"/>
+	</g>
+	<rect x="38.5" y="11.5" class="st3" width="52" height="14"/>
+	
+		<rect x="58.4" y="5.8" transform="matrix(0.7073 -0.7069 0.7069 0.7073 10.5445 48.9128)" class="st4" width="11.8" height="11.8"/>
+	<g>
+		<path class="st5" d="M55.3,32.4c0,0.8-0.7,1.5-1.5,1.5s-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5S55.3,31.5,55.3,32.4z"/>
+		<path class="st5" d="M65.8,32.4c0,0.8-0.7,1.5-1.5,1.5c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5C65.1,30.9,65.8,31.5,65.8,32.4z"/>
+		<path class="st5" d="M76.3,32.4c0,0.8-0.7,1.5-1.5,1.5s-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5S76.3,31.5,76.3,32.4z"/>
+	</g>
+</g>
+</svg>

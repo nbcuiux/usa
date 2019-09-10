@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>USA</title>
+    <link href="app.css" rel="stylesheet">
+    <link href="lib/animsition.css" rel="stylesheet">
+    <link rel="shortcut icon" href="http://www.usanetwork.com/sites/usanetwork/themes/aurora_usa/images/favicon.ico" />
+  </head>
+  <body>
+    <div class="usa-bg"></div>
+    <section>
+      <div class="container">
+        <a href="journey-map/usa-producer-create-series.html" class="animsition-link" target="_blank">
+          <div class="page-selector">
+            <img class="intro-icons" src="img/journey-map.svg" />
+            <div class="title">Journey Map</div>
+          </div>
+        </a>
+        <a href="lifecycle/index.html" class="animsition-link">
+          <div class="page-selector">
+            <img class="intro-icons" src="img/lifecycle.svg" />
+            <div class="title">Lifecycle</div>
+          </div>
+        </a>
+        <a href="requirements/index.html" class="animsition-link">
+          <div class="page-selector">
+            <img class="intro-icons" src="img/requirements.svg" />
+            <div class="title">Requirements</div>
+          </div>
+        </a>
+        <a href="discovery/index.html" class="animsition-link">
+          <div class="page-selector">
+            <img class="intro-icons" src="img/discovery.svg" />
+            <div class="title">Discovery</div>
+          </div>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jQuery/jquery-1.11.3.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="lib/animsition.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script>
+    $(document).ready(function() {
+      $(".animsition").animsition({
+        inClass: 'fade-in',
+        outClass: 'fade-out',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        loadingInner: '', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay : false,
+        overlayClass : 'animsition-overlay-slide',
+        overlayParentElement : 'body',
+        transition: function(url){ window.location.href = url; }
+      });
+    });
+    </script>
+  </body>
+</html>

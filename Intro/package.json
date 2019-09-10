@@ -1,0 +1,22 @@
+{
+  "name": "usa_discovery",
+  "version": "1.0.0",
+  "description": "USA Discovery",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "author": "William Rajwan NBC Universal",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.9.11",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-less": "^3.0.3",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^3.8.1"
+  }
+}
